@@ -7,10 +7,34 @@ public class operation {
     int e = a * b;
     int f = a / b;
     int g = a % b;
+
     System.out.println("a + b = " + c);
     System.out.println("a - b = " + d);
     System.out.println("a * b = " + e);
     System.out.println("a / b = " + f);
     System.out.println("a % b = " + g);
+
+    System.out.println("a++ = " + a++);
+    System.out.println("a = " + a);
+    System.out.println("++a = " + ++a);
+    System.out.println("a = " + a);
+
+    System.out.println("b-- = " + b--);
+    System.out.println("b = " + b);
+    System.out.println("--b = " + --b);
+    System.out.println("b = " + b);
+
+    System.out.println("a += b = " + (a += b));
+    System.out.println("a -= b = " + (a -= b));
+    System.out.println("a *= b = " + (a *= b));
+    System.out.println("a /= b = " + (a /= b));
+    System.out.println("a %= b = " + (a %= b));
+
+    System.out.println("a == b = " + (a == b));
+    System.out.println("a != b = " + (a != b));
+    System.out.println("a > b = " + (a > b));
+    System.out.println("a < b = " + (a < b));
+    System.out.println("a >= b = " + (a >= b));
+    System.out.println("a <= b = " + (a <= b));
   }
 }
