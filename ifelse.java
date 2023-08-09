@@ -4,11 +4,12 @@ public class ifelse {
   String shipping;
   
   public ifelse(boolean filled, double cost, String shippingMethod) {
-		if (cost > 24.00) {
+    if (cost > 24.00) {
       System.out.println("High value item!");
     } else {
       System.out.println("Low value item!");
     }
+
     isFilled = filled;
     billAmount = cost;
     shipping = shippingMethod;
