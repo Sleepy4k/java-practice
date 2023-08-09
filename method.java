@@ -1,54 +1,17 @@
 public class method {
-  int balance;
-  
-  public method(int initialBalance){
-    balance = initialBalance;
+  public static void main(String[] args) {
+    String name = "Leng";
+    
+    System.out.println(name.length());
+    System.out.println(name.toUpperCase());
+    System.out.println(name.toLowerCase());
+    System.out.println(name.indexOf("e"));
+    System.out.println(name.charAt(2));
+    System.out.println(name.equals("Leng"));
+    System.out.println(name.concat("re"));
+    System.out.println(name.substring(0, 1));
+    System.out.println(name.substring(1, 2));
+    System.out.println(name.substring(2, 3));
+    System.out.println(name.substring(3, 4));
   }
-
-  public void checkBalance() {
-    System.out.println("Hello!\nYour balance is " + balance);
-  }
-
-  public void deposit(int amountToDeposit) {
-    balance += amountToDeposit;
-    System.out.println("You just deposited " + amountToDeposit);
-  }
-
-  public int withdraw(int amountToWithdraw) {
-    balance -= amountToWithdraw;
-    System.out.println("You just withdrew " + amountToWithdraw);
-    
-    return amountToWithdraw;
-  }
-
-  public String toString() {
-    return "You using Java Banking Service";
-  }
-  
-  public static void main(String[] args){
-    method savings = new method(2000);
-    
-    System.out.println(savings);
-
-    //Check balance:
-    savings.checkBalance();
-    
-    //Withdrawing:
-    savings.withdraw(300);
-    
-    //Check balance:
-    savings.checkBalance();
-    
-    //Deposit:
-    savings.deposit(600);
-    
-    //Check balance:
-    savings.checkBalance();
-    
-    //Deposit:
-    savings.deposit(600);
-    
-    //Check balance:
-    savings.checkBalance();
-  }       
 }
