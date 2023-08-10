@@ -11,14 +11,16 @@ public class Account {
   }
 
   public void deposit(double amount) {
-    balance += amount;
+    this.balance += amount;
   }
 
   public void withdraw(double amount) {
-    if (amount + transactionFee > balance) {
+    double newAmount = amount + this.transactionFee;
+
+    if (newAmount > this.balance) {
       System.out.println("Insufficient funds.");
     } else {
-      balance -= amount + transactionFee;
+      this.balance -= newAmount;
     }
   }
 
@@ -27,6 +29,6 @@ public class Account {
   }
 
   public String toString() {
-    return name + ", $" + balance;
+    return this.name + ", $" + this.balance;
   }
 }

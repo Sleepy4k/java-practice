@@ -36,6 +36,7 @@ public class Bank {
 
     bank.setTransactionFee(10.00);
     bank.withdraw(50.00);
+    
     System.out.println(bank);
   }
 }
